@@ -8,7 +8,7 @@ from sklearn.preprocessing import MinMaxScaler
 from indicators import get_technical_indicators
 
 # Modeli Yükleme
-model = tf.keras.models.load_model('lstm_stock_model.h5')
+model = tf.keras.models.load_model('models\lstm_stock_model.h5')
 
 # Test Verisini Çekme ve İşleme
 data = yf.download('^NSEBANK', start='2007-10-16', end='2021-04-19')
